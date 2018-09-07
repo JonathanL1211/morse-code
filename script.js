@@ -39,8 +39,8 @@ var inp2 = prompt("Input your morse code: ");
 
 var reverseObj = function(morse){
     var newObj = {};
-    for(var key in morse){
-        newObj[morse[key]] = key;
+    for(var key in morse){ // key === key of the object => alphabets "a", "b"
+        newObj[morse[key]] = key;//assigning an object objName[key] = value; alphabet["key"] = value
     }
     return newObj;
 }
